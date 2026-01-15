@@ -395,11 +395,6 @@
   <main id="top">
     <section class="hero">
       <div class="container">
-        <div class="pill">
-          <span class="dot" aria-hidden="true"></span>
-          <span>Intern platform til “branching” awareness-stories</span>
-        </div>
-
         <div class="hero-grid">
           <div class="hero-left" style="grid-column: 1 / -1;">
             <h1>Gør cybersikkerhed til en historie, folk husker.</h1>
@@ -414,15 +409,6 @@
               <span>Bygget i editor fra bunden</span>
               <span>Realistiske konsekvenser</span>
             </div>
-
-            <div class="btn-row">
-              <a class="btn btn-primary" href="#examples">Se eksempel</a>
-              <a class="btn btn-ghost" href="#features">Læs mere</a>
-            </div>
-
-            <p style="margin:16px 0 0; color:var(--muted2); font-size:13.5px;">
-              Designet til interne forløb: kort, konkret og beslutningsbaseret læring.
-            </p>
           </div>
         </div>
 
