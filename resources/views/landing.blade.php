@@ -385,7 +385,6 @@
           <a href="#features">Features</a>
           <a href="#examples">Eksempler</a>
           <a href="#how">Hvordan det virker</a>
-          <a href="#faq">FAQ</a>
         </nav>
 
         <a class="btn btn-primary" href="#contact">Book demo</a>
@@ -492,74 +491,6 @@
       </div>
     </section>
 
-    <section id="faq" class="section">
-      <div class="container">
-        <h2>FAQ</h2>
-        <p class="desc">Kort sagt: Stories er en editor + interaktiv afvikling. Resten er indhold, du selv ejer.</p>
-
-        <div class="faq" role="region" aria-label="FAQ">
-          <div class="faq-item">
-            <button class="faq-q" type="button">
-              Kan vi bygge alt selv?
-              <span class="chev" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-a"><p>Ja—alt bygges fra bunden i editoren: slides, valg, forgreninger og feedback.</p></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" type="button">
-              Er det kun phishing?
-              <span class="chev" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-a"><p>Nej. Det fungerer til phishing, ransomware, DDoS, insider risks, og “day-to-day” sikkerhedsadfærd.</p></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" type="button">
-              Hvordan hjælper branching?
-              <span class="chev" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-a"><p>Når brugeren vælger selv, føles konsekvensen mere reel—og den gode adfærd bliver lettere at huske.</p></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" type="button">
-              Kan vi koble “hvad gør vi”-processer på?
-              <span class="chev" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-a"><p>Ja. Brug slides til at vise playbooks: hvem kontakter vi, hvilke trin tager vi, og hvilke kontroller aktiveres.</p></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" type="button">
-              Skal vi bruge billeder?
-              <span class="chev" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-a"><p>Nej. Du kan få et visuelt stærkt udtryk med cards, gradienter og “mockups” bygget i UI-komponenter.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section" style="padding-top:10px">
-      <div class="container">
-        <div class="split">
-          <div class="feature">
-            <h3 style="margin:0 0 6px;">Klar til at gøre awareness mere “hands-on”?</h3>
-            <p>Book en intern gennemgang eller del et scenario, så kan vi bygge en skabelon der matcher jeres miljø.</p>
-          </div>
-          <div class="feature">
-            <div class="btn-row">
-              <a class="btn btn-primary" href="mailto:security@example.com">Kontakt</a>
-              <a class="btn" href="#top">Tilbage til toppen</a>
-            </div>
-            <p style="margin:12px 0 0; color:var(--muted2); font-size:13px;">
-              (Opdatér mail-link og evt. ruter til din applikation.)
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
@@ -577,7 +508,6 @@
           <a href="#features">Features</a>
           <a href="#examples">Eksempler</a>
           <a href="#how">Hvordan det virker</a>
-          <a href="#faq">FAQ</a>
         </div>
 
         <div style="font-size:12.5px;">© {{ date('Y') }} — Intern brug</div>
@@ -586,15 +516,7 @@
   </footer>
 
   <script>
-    // FAQ accordion
-    document.querySelectorAll('.faq-q').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const open = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-        if (!open) item.classList.add('open');
-      });
-    });
+    // Placeholder for future interactions.
   </script>
 </body>
 </html>
