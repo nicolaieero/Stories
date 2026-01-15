@@ -25,6 +25,7 @@
       --radius2: 26px;
       --max: 1120px;
       --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --bar-bg: rgba(7,10,18,.25);
     }
 
     *{box-sizing:border-box}
@@ -351,10 +352,10 @@
       padding:34px 0 50px;
       color:var(--muted);
       border-top:1px solid rgba(255,255,255,.08);
-      background: rgba(7,10,18,.25);
+      background: var(--bar-bg);
     }
     .quote-bar{
-      background: rgba(7,10,18,.25);
+      background: var(--bar-bg);
       border-top:1px solid rgba(255,255,255,.08);
       border-bottom:1px solid rgba(255,255,255,.08);
     }
