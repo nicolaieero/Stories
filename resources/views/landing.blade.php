@@ -65,10 +65,10 @@
     }
     .brand{display:flex; align-items:center; gap:10px}
     .logo{
-      width:36px;height:36px;border-radius:12px;
-      background: conic-gradient(from 180deg, var(--accent), rgba(124,92,255,.35), var(--accent2), rgba(51,225,160,.25), var(--accent));
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-      border:1px solid rgba(255,255,255,.18);
+      width:120px;
+      height:auto;
+      display:block;
+      filter: drop-shadow(0 10px 26px rgba(0,0,0,.35));
     }
     .brand b{letter-spacing:.2px}
     .nav-links{display:flex; gap:18px; align-items:center}
@@ -374,7 +374,7 @@
     <div class="container">
       <div class="nav-inner">
         <a href="#top" class="brand">
-          <div class="logo" aria-hidden="true"></div>
+          <img class="logo" src="{{ asset('logo.png') }}" alt="Stories">
           <div>
             <b>Stories</b><br>
             <span style="font-size:12px;color:var(--muted2)">Interaktive cyber-scenarier</span>
@@ -402,7 +402,7 @@
         </div>
 
         <div class="hero-grid">
-          <div class="hero-left">
+          <div class="hero-left" style="grid-column: 1 / -1;">
             <h1>Gør cybersikkerhed til en historie, folk husker.</h1>
             <p class="lead">
               Stories er en intern platform til interaktive scenarier om phishing, ransomware og DDoS —
@@ -424,79 +424,6 @@
             <p style="margin:16px 0 0; color:var(--muted2); font-size:13.5px;">
               Designet til interne forløb: kort, konkret og beslutningsbaseret læring.
             </p>
-          </div>
-
-          <div class="mock" aria-label="Produkt mockup">
-            <div class="mock-top">
-              <div class="chips">
-                <span class="chip">Scenario: Phishing</span>
-                <span class="chip">Audience: Alle</span>
-                <span class="chip">Mode: Interaktiv</span>
-              </div>
-              <div class="status">
-                <span class="dot" aria-hidden="true"></span>
-                <span>Preview kører</span>
-              </div>
-            </div>
-
-            <div class="mock-body">
-              <div class="canvas" aria-label="Branching graph">
-                {{-- Lines --}}
-                <div class="line" style="left:170px; top:88px; width:160px;"></div>
-                <div class="line" style="left:170px; top:160px; width:160px;"></div>
-                <div class="line" style="left:330px; top:88px; width:160px;"></div>
-
-                {{-- Nodes --}}
-                <div class="node" style="left:10px; top:54px;">
-                  <b>Indbakke: “MFA reset”</b>
-                  <small>Angriber spoof’er afsender og presser på hast.</small>
-                  <span class="tag">Start</span>
-                </div>
-
-                <div class="node warn" style="left:210px; top:18px;">
-                  <b>Klik på link</b>
-                  <small>Credential harvest → adgang til O365.</small>
-                  <span class="tag">Risiko</span>
-                </div>
-
-                <div class="node ok" style="left:210px; top:124px;">
-                  <b>Rapportér email</b>
-                  <small>Vi isolerer, blokerer og advarer teamet.</small>
-                  <span class="tag">Godt valg</span>
-                </div>
-
-                <div class="node warn" style="left:410px; top:18px;">
-                  <b>Persistence</b>
-                  <small>Regler i mailbox + lateral movement.</small>
-                  <span class="tag">Escalation</span>
-                </div>
-
-                <div class="node ok" style="left:410px; top:198px;">
-                  <b>Containment</b>
-                  <small>Revoke tokens, reset, log review.</small>
-                  <span class="tag">Response</span>
-                </div>
-              </div>
-
-              <div class="sidebar" aria-label="Sidebar">
-                <div class="card">
-                  <h4>Slide</h4>
-                  <p>“Du får en email fra IT. Hvad gør du?”</p>
-                </div>
-                <div class="card">
-                  <h4>Valg</h4>
-                  <p>1) Klik på linket<br>2) Rapportér som phishing<br>3) Ignorér</p>
-                </div>
-                <div class="card">
-                  <h4>Compliance note</h4>
-                  <p>Logning, awareness, og playbooks kobles på beslutningspunkter.</p>
-                </div>
-                <div class="card">
-                  <h4>Mål</h4>
-                  <p>Gøre konsekvenser og gode handlinger tydelige—uden at holde foredrag.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -522,79 +449,6 @@
       </div>
     </section>
 
-    <section id="features" class="section">
-      <div class="container">
-        <h2>Byg awareness, der føles som virkelighed</h2>
-        <p class="desc">
-          Ikke en PDF. Ikke en quiz uden kontekst. Stories er scenarier med en tydelig begyndelse,
-          midte og slutning — og valg, der former udfaldet.
-        </p>
-
-        <div class="grid6">
-          <div class="feature">
-            <div class="icon" aria-hidden="true">🧱</div>
-            <h3>Slide-bygger</h3>
-            <p>Komponer forløb som en fortælling: intro → signaler → beslutning → konsekvens.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">🌳</div>
-            <h3>Branching trees</h3>
-            <p>Forgreninger gør læring mere “sticky” fordi valget føles personligt.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">🕵️</div>
-            <h3>Attacker → employee</h3>
-            <p>Vis hele kæden: angriberens metode, vores kontrolpunkter, og brugerens rolle.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">📎</div>
-            <h3>Playbooks i kontekst</h3>
-            <p>Knyt “hvad gør vi nu?” til konkrete trin: isolation, reset, rapportering.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">📊</div>
-            <h3>Let at gentage</h3>
-            <p>Genbrug skabeloner og justér scenarier til aktuelle trusler og interne cases.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">🔍</div>
-            <h3>Signal-træning</h3>
-            <p>Træn mikro-adfærd: kig på domæne, links, urgency, vedhæftninger, MFA prompts.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="how" class="section">
-      <div class="container">
-        <h2>Hvordan det virker</h2>
-        <p class="desc">Tre enkle trin: byg, forgren, og lær på konsekvenser.</p>
-
-        <div class="steps">
-          <div class="step">
-            <div class="num">1</div>
-            <h3 style="margin:0 0 6px; font-size:15px;">Design scenariet</h3>
-            <p style="margin:0; color:var(--muted); line-height:1.55; font-size:13.5px;">
-              Start med en realistisk trigger: email, alert, downtime eller uventet login.
-            </p>
-          </div>
-          <div class="step">
-            <div class="num">2</div>
-            <h3 style="margin:0 0 6px; font-size:15px;">Tilføj valg</h3>
-            <p style="margin:0; color:var(--muted); line-height:1.55; font-size:13.5px;">
-              Hvert valg leder til en ny slide: risikovej, sikker vej, eller “næsten rigtigt”.
-            </p>
-          </div>
-          <div class="step">
-            <div class="num">3</div>
-            <h3 style="margin:0 0 6px; font-size:15px;">Vis konsekvens + respons</h3>
-            <p style="margin:0; color:var(--muted); line-height:1.55; font-size:13.5px;">
-              Brugeren ser effekten — og hvad vi gør: contain, investigate, recover.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="examples" class="section">
       <div class="container">
@@ -712,7 +566,7 @@
     <div class="container">
       <div class="footgrid">
         <div style="display:flex; align-items:center; gap:10px">
-          <div class="logo" aria-hidden="true" style="width:28px;height:28px;border-radius:10px"></div>
+          <img class="logo" src="{{ asset('logo.png') }}" alt="Stories" style="width:96px;">
           <div>
             <div style="color:var(--text); font-weight:700;">Stories</div>
             <div style="font-size:12.5px;">Interaktiv cyber awareness</div>
