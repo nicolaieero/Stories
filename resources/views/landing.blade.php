@@ -353,6 +353,11 @@
       border-top:1px solid rgba(255,255,255,.08);
       background: rgba(7,10,18,.25);
     }
+    .quote-bar{
+      background: rgba(7,10,18,.25);
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
     .footgrid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap}
     .footgrid a{color:var(--muted); font-size:13.5px}
     .footgrid a:hover{color:var(--text)}
@@ -465,7 +470,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section quote-bar">
       <div class="container">
         <div class="quote">
           <p>
