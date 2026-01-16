@@ -471,7 +471,7 @@
     </section>
 
     <section class="section quote-bar">
-      <div class="container">
+      <div class="container" style="padding-top:10px">
         <div class="quote">
           <p>
             “Det fede er, at medarbejderen ikke bare får ‘rigtigt/forkert’ — de ser angrebets logik,
