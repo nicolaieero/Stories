@@ -392,7 +392,7 @@
           <a href="#how">Hvordan det virker</a>
         </nav>
 
-        <a class="btn btn-primary" href="#contact">Book demo</a>
+        <span></span>
       </div>
     </div>
   </header>
