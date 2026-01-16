@@ -355,9 +355,8 @@
       background: var(--bar-bg);
     }
     .quote-bar{
-      background: linear-gradient(180deg, rgba(7,10,18,0) 0%, var(--bar-bg) 45%, var(--bar-bg) 100%);
-      border-top:1px solid rgba(255,255,255,.08);
-      box-shadow: inset 0 -1px 0 rgba(255,255,255,.08);
+      background: linear-gradient(180deg, rgba(7,10,18,0) 0%, rgba(7,10,18,0.06) 35%, var(--bar-bg) 100%);
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,.06);
     }
     .footgrid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap}
     .footgrid a{color:var(--muted); font-size:13.5px}
